@@ -773,9 +773,11 @@ margin-top: 10px;
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) 
 {
-.next {
-  right: 0;
-  padding-right: 1%;
+	.next 
+	{
+  	right: 0;
+  	padding-right: 1%;
+	}
 }
 
 	
