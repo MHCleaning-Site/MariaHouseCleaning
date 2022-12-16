@@ -1,0 +1,866 @@
+*
+{
+	margin:  0;
+	padding:  0;
+	box-sizing: border-box;
+}
+
+
+/* Image background Top*/
+.container
+{
+	height: 100vh;
+	width:  100%;
+	background-image:  url("plant.jpg");
+	background-position: center ;
+	background-size: cover;
+	padding-left: 5%;
+	padding-right: 5%;
+	box-sizing: border-box;
+	position: relative;
+	background-repeat: no-repeat;
+}
+
+
+/* Nav bar*/
+.navbar
+{
+	width: 100%;
+	height: 15vh;
+	margin: auto;
+	display: flex;
+	align-items: center;
+}
+
+/* Phone: gets rid of logo and min navbar*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) 
+{
+	.navbar
+	{
+		width: 100%;
+		margin:0;
+	}
+
+	.logo
+	{
+		display:none;
+	}
+
+	.container
+	{
+		height: 125vh;
+	}
+
+}
+
+
+/*Targets the nav position/where it starts*/
+nav
+{
+	flex:  1;
+	padding-left: 60px;
+}
+
+nav ul li
+{
+	display: inline-block;
+	list-style: none;
+	margin: 0px 27px;
+}
+
+
+/* Nav links under phone + email*/
+nav ul li a
+{
+	text-decoration:none ;
+	color: black;
+	font-size: 20px;
+	font-weight: bold;
+	text-transform:  capitalize;
+}
+
+/* Phone: pushed the nav all the way to the left & changed color*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) 
+{
+	nav
+	{
+		padding-left: 0px;
+	}
+
+	nav ul li
+	{
+		margin: 0px 2px
+	}
+
+	nav ul li a
+	{
+	font-size: 15px;
+	color:white;
+	}
+}
+
+/* The links under phone& email-change color when hovered over*/
+nav ul li a:hover
+{
+	color: #5DF117;
+	transition: .4s;
+}
+
+.email:hover, .email:focus
+{
+
+  background-color: #2980B9;
+}
+
+.phone:hover, .phone:focus
+{
+
+  background-color: #2980B9;
+}
+
+
+
+/* Logo of the broom*/
+
+.logo
+{
+	width: 80px;
+	size: 37px;
+	cursor: pointer;
+	margin-top: 20px;
+}
+
+
+/* Phone icon*/
+.phone
+{
+	width: 40px;
+	cursor: pointer;
+}
+
+/* Email*/
+.email
+{
+	width: 40px;
+	cursor: pointer;
+	margin-right: 40px;
+}
+
+/* Phone: Made the icons smaller and closer*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) 
+{
+	.email
+	{
+		width: 35px;
+		cursor: pointer;
+		margin-right: 10px;
+	}
+	.phone
+	{
+		width: 35px;
+		cursor: pointer;
+	}
+
+}
+
+
+/* The Sub menu under email + phone*/
+.sub-menu-wrap
+{
+	position: absolute;
+	top: 9%;
+	right: 1%;
+	width: 170px;
+	max-height: 0px;
+	overflow: hidden;
+	transition: max-height 0.5s;
+}
+
+/*How big the sub menu can get */
+.sub-menu-wrap.open-menu
+{
+	max-height: 400px;
+}
+
+/* How the menu looks*/
+.sub-menu
+{
+	background: white;
+	padding: 20px;
+	margin: 13px;
+}
+
+/* Sub menu text format*/
+.user-info
+{
+	
+	align-items: center;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) 
+{
+	.sub-menu-wrap
+	{
+	top: 7%;
+	}
+
+
+}
+
+
+.user-info h3
+{
+	font-weight: 20;
+	font-size: 17px;
+}
+
+.sub-menu hr
+{
+
+	border: 0;
+	height: 1px;
+	width: 100%;
+	background: black;
+	margin: 15px 0 10 px;
+
+}
+
+/* Sub menu links + actions*/
+.user-info a
+{
+font-size: 15px;
+
+}
+
+.user-info a:link 
+{
+	color:black;
+	text-decoration: none;
+
+}
+.user-info a:visited
+{
+	color: #67B5EB;
+	text-decoration: none;
+
+}
+
+.user-info a:hover
+{
+	color: red;
+	text-decoration:  underline
+}
+
+.user-info a:active
+{
+
+	color: yellow;
+	text-decoration:  underline;
+}
+
+
+.user-info li{
+  margin: 15px 0;
+}
+
+
+/* Second Sub-menu*/
+
+.sub-menu-wrap2
+{
+	position: absolute;
+	top: 11%;
+	right: 10%;
+	width: 170px;
+	max-height: 0px;
+	overflow: hidden;
+	transition: max-height 0.5s;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) 
+{
+	.sub-menu-wrap2
+	{
+		top:8%;
+	}
+
+
+}
+.sub-menu-wrap2.open-menu
+{
+	max-height: 400px;
+}
+
+
+.sub-menu2
+{
+	background: white;
+	padding: 10px;
+	margin: 2px;
+}
+
+.user-info2
+{
+	
+	align-items: center;
+}
+
+.user-info2 h3
+{
+	font-weight: 20;
+	font-size: 17px;
+}
+
+.sub-menu2 hr
+{
+
+	border: 0;
+	height: 1px;
+	width: 100%;
+	background: black;
+	margin: 5px 0 8 px;
+
+}
+/* Sub menu 2 links*/
+
+.user-info2 a
+{
+	font-size: 13px;
+}
+
+.user-info2 a:link 
+{
+	color:black;
+	text-decoration: none;
+	background: transparent;
+
+}
+.user-info2 a:visited
+{
+	color: #67B5EB;
+	text-decoration: none;
+
+}
+
+.user-info2 a:hover
+{
+	color: red;
+	text-decoration:  underline
+}
+
+.user-info2 a:active
+{
+
+	color: yellow;
+	text-decoration:  underline;
+}
+
+
+/* Added space between image and the begining */
+.space
+{
+	background: black;
+	padding-bottom: 10px;
+}
+
+
+/* Begining of tabs*/
+
+/* Background*/
+
+.service
+{	
+	width: 100%;
+	padding: 100px 0px;
+	background-image:  url("bathroom.jpg");
+	background-position: center ;
+	background-size: cover;
+
+}
+
+/* Tab Header*/
+.title h2
+{
+	color:  white;
+	font-size: 75px ;
+	width: 1130px;
+	margin: 30px auto;
+	text-align: center;
+}
+
+/*  3 tabs   */
+
+.box
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 400px;
+
+}
+
+.card
+{
+	height: 365px;
+	width: 335px;
+	padding:  20px 35px;
+	background: #191919;
+	border-radius: 20px;
+	margin: 15px;
+	position: relative;
+	overflow: hiddden;
+	text-align: center;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) 
+{
+
+	.title h2
+	{
+
+		color:  black;
+		font-size: 38px ;
+		width: 100%;
+		margin-left: 0px;
+		text-align: center;
+	}
+
+	.card
+{
+	height: 465px;
+	width: 135px;
+	padding:  10px 5px;
+	background: #191919;
+	border-radius: 20px;
+	margin: 3px;
+	position: relative;
+	overflow: hiddden;
+	text-align: center;
+}
+
+
+}
+
+/* Icons on the cards-img*/
+.card i
+{
+	font-size: 50px;
+	display: block;
+	text-align: center;
+	margin: 25px 0px;
+	color: #f9004d;
+}
+
+
+/* Title on each card*/
+h5
+{
+	color: white;
+	font-size: 23px;
+	margin-bottom: 13px;
+}
+
+/* pharagraph under it*/
+.speel p
+{
+	color: #fcfc;
+	font-size: 16px;
+	line-height: 29px;
+	text-align: left;
+	font-weight: bold;
+}
+
+.speel ul
+{
+	color: #fcfc;
+	font-size: 15px;
+	line-height: 20px;
+	margin-bottom: 25px;
+	text-align: left;
+}
+
+
+/*The see through panel */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*Text in it */
+.row
+{
+	background:  rgba(245,245,245,.4);
+	box-shadow:  0 15px 20px rgba(0,0,0,.2);
+	text-align: center;
+	margin-top: 40px;
+
+}
+
+/* Columns of the top part-Table:Services+Estimate Cal
+-Not the background square but inside */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 400px;
+}
+
+.column h2
+{
+	font-size: 30px;
+
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) 
+{
+	.column h2
+	{
+		font-size: 25px;
+
+	}
+
+	.column 
+	{
+	  width: 100%;
+	  padding: 5px;
+	  height: 328px;
+	}
+
+
+}
+
+/*Affects the warning on Estimate Calculater */
+#How
+{
+
+	font-size:13px;
+	color:#8b0000;
+	font-weight: bold;
+
+}
+
+
+
+form
+{
+	background: white;
+	display: flex;
+	flex-direction: column;
+	padding:  3vw 2vw ;
+	width: 55%;
+	max-width: 450px;
+	border-radius: 30px;
+}
+
+/*Moves the actual form-calc */
+.row form
+{
+margin-left: 120px;
+margin-top: 10px;
+
+}
+
+#btn
+{
+	padding: 12px;
+	background:  #ff5361;
+	color: #fff;
+	font-size: 15px;
+	border: 0;
+	outline: none;
+	cursor: pointer;
+	width: 90px;
+	margin: 5px auto 0;
+	border-radius: 30px;
+
+}
+	.column p
+	{
+		margin-top: 10px;
+		font-size: 20px;
+		margin-left: 8px;
+		line-height: 28px;
+
+	}
+
+
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) 
+{
+	.column p
+	{
+		margin-top: 8px;
+		font-size: 20px;
+		margin-left: 2px;
+		line-height: 23px;
+
+
+	}
+
+		form
+	{
+		padding:  3vw 6vw ;
+		width: 70%;
+		max-width: 450px;
+		border-radius: 30px;
+		float:left;
+	}
+
+	.row form
+	{
+		margin-left: 56px;
+		margin-top: 20px;
+
+	}
+
+}
+
+
+
+#btn:hover
+{
+	transform:  scale(1.3);
+}
+
+
+#output
+{
+	border:0;
+}
+
+.Map
+{
+ background-color: #e8f4f8;
+ padding-top: 67px;
+ padding-left: 8%;
+
+
+}
+
+.Map h3
+{
+	color:  black;
+	font-size: 55px ;
+	width: 1110px;
+	margin: 30px auto;
+	text-align: center;
+	padding-bottom: 40px;
+}
+
+
+#map-caption
+{
+	color:red;
+	padding-left: 35px;
+
+}
+
+
+/* Locations and gallary section*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) 
+{
+	.Map
+	{
+ 		padding-left: 5%;
+ 		padding-bottom: 23%;
+ 		padding-top: 47px;
+	}
+
+	.Map h3
+	{
+		color:  black;
+		font-size: 39px ;
+		width: 100%;
+		margin-left: 0px;
+		text-align: center;
+		padding-bottom: 35px;
+	}
+
+}
+
+
+
+#Map-size
+{
+	height:470px;
+	width:420px;
+
+}
+.Insta
+{
+	 background-color: #e8f4f8;
+	 padding-left: 30px;
+	 padding-top: 5%;
+}
+
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) 
+{
+
+	#Map-size
+	{
+		height: 350px;
+		width:340px;
+		margin-bottom: 50px;
+	}
+
+	.Insta
+	{
+		 background-color: #e8f4f8;
+		 padding-left: 9px;
+		 margin-top: 40%;
+	}
+
+}
+
+
+
+
+/* Position the image container (needed to position the left and right arrows) */
+.Gallary{
+	float:right;
+  position: relative;
+  width:50%;
+  padding-right: 5%;
+  
+}
+
+/* Hide the images by default */
+.images-s{
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) 
+{
+.Gallary
+	{
+		float:left;
+		width:98%;
+		padding-right: 0%;
+		padding-left: 1%;
+		margin-bottom: 30px;
+	}
+
+}
+
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  padding-right: 13%;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) 
+{
+.next {
+  right: 0;
+  padding-right: 1%;
+}
+
+	
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover
+{
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.next:hover 
+{
+  background-color: rgba(0, 0, 0, 0.8);
+
+}
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) 
+{
+	.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  padding-right: 5%;
+}
+
+
+
+}
+
+/* Number text (1/3 etc) */
+.position-num{
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-box{
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row-img:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side-Size of thumbnail*/
+
+.column-img {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+/* The Enlarged image at the top*/
+#gallary-img
+{
+	vertical-align: center;
+	width:100%;
+	height: 5%;
+}
+
+/* Thumbmail at bottom of gallary-Preview*/
+#S-gallary-img
+{
+	width:100%;
+}
+

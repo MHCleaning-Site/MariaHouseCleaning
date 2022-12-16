@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name= "description" content= "Services- Maria's House Cleaning">
+	<meta lang= "en">
+	<title>Services </title>
+	<link rel="stylesheet" href="services-style.css">
+	<link rel="icon" type="image/x-icon" href="searchicon.png">
+</head>
+<body>
+
+	<!-- This section here is for the navbar
+		  *Should be on top of each page/It's for the pages in the site
+			*Might have to change the hrefs to # later
+	-->
+
+	<div class="container">
+		<div class="navbar">
+			<img src="logo.png" alt="logo-broom & bucket- with company name"class="logo">
+			<nav>
+				<ul>
+					<li><a href="Maria'sHouseCleaning.html">Home</a></li>
+					<li><a href="Services.html">Services</a></li>
+					<li><a href="Reviews.html">Reviews</a></li>
+					<li><a href="about.html">Contact Us</a></li>
+				</ul>
+			</nav>
+
+
+
+
+			<!--Left nav bar
+			*Contact section/Should be on top of all 
+			*Add corresponding Java
+			-->
+
+			<!-- Email-->
+			<img src="email icon.png" class="email" alt="email icon"  onclick="toggleMenu2()">
+
+			<div class="sub-menu-wrap2" id="subMenu2">
+				<div class="sub-menu2">
+					<div class="user-info2">
+						<h3>Contact Us</h3>
+						<hr>
+						<a class="email" href="mailto:mariadamians.hc@gmail.com">mariadamians.hc@gmail.com</a>
+					</div>
+				</div>
+			</div>
+
+
+			<!--Phone/Call-->
+			<img src="phone icon.png" alt="phone icon" class="phone" onclick="toggleMenu()">
+
+			<div class="sub-menu-wrap" id="subMenu">
+				<div class="sub-menu">
+					<div class="user-info">
+						<h3>Contact Us</h3>
+						<hr>
+
+						<ul>
+						<li><a href="tel:2534786730">(253)-478-6730</a></li>
+						<li><a href="tel:2534576345">(253)-457-6345</a></li>
+						<li><a href="tel:2534865937">(253)-486-5937</a></li>
+						</ul>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+<!-- Refers to the begining of actual page/side by side-->
+
+				<div class="row">
+  				<div class="column">
+    				<h2>Services</h2>
+    				<p>Deep thorough cleaning, that will leave your home<br> feeling fresh! </p>
+    				<p>We do one-time clean up and scheduled cleanings. <br>Leave the stress of a clean home to us.</p>
+    				<p>From regular to deep cleaning, <br>we do it all. <br>For any particular inquiries don't hesitate to contact us.
+  				</div>
+
+  				<div class="column">
+    				<h2>Estimate Calculator</h2>
+    					<p id="How">**Enter number of aprox. hours of service needed to get a free estimate. Keep in mind <u>Estimate is not Final</u>**</p>
+    						<p id="How">** Price Breakdown:On hourly basis, with three workers per house at $50/hr **</p>
+    				<form name="formcalc">
+							Number of Hours
+							<br>
+							<input type="text" name="txtnum1" placeholder="Enter hours needed">
+							<br>
+							<input id="btn" type="button" value=" Get Price" onClick="sumValues()">
+							<br>
+							<input id="output" type="text" name="txtres">
+						
+					</form>
+				
+
+  				</div>
+				</div>
+
+	</div>
+<!--Ends the Container img-->		
+
+<div class="space">
+	
+</div>
+
+<!--Begining of Services Row -->
+
+<!--One-->
+			<div class="service">
+					<div class="title">
+					<h2>Our Cleaning Services</h2>
+					</div>
+					<div class="box">
+						<div class="card">
+							<i class="fa-solid fa-hourglass-start"></i>
+							<h5>Regular Cleanings</h5>
+						<div class="speel">
+							<p>
+								Includes:
+								<ul>
+									<li>General Dusting</li>
+									<li>Mopping</li>
+									<li>Thorough Vacuuming</li>
+									<li>All required rooms left like new</li>
+								</ul>
+							</p>
+						</div>
+						</div>
+
+
+<!--Two-->
+					<div class="card">
+						<i class="fa-solid fa-hand-sparkles"></i>
+						<h5>Deep Cleaning</h5>
+					<div class="speel">
+						<p>
+							Includes:
+							<ul>
+									<li>Cleaning process similar to regular cleaning, except more thorough</li>
+									<li>Typically duration is longer that a regular claening</li>
+								</ul>
+						</p>
+					</div>
+					</div>
+
+
+					<div class="card">
+						<i class="fa-regular fa-face-smile"></i>
+						<h5>Happy Customers</h5>
+					<div class="speel">
+						<p>
+							Clean environments = happy homes
+							<ul>
+								<li>Check out our reviews! </li>
+								<li>Better yet, contact us today to join our satisfied customers.
+								</li>
+							</ul>
+						</p>
+					</div>
+					</div>
+				</div>
+			</div>
+
+
+	<!--Google Maps For Client -->
+		<div class="Map">
+	 		<h3> Locations & Gallary</h3>
+	 		<p id=map-caption>**Service is available for the following areas**</p>
+			<iframe src="https://www.google.com/maps/d/u/5/embed?mid=1XdtG_LVz3xktJdUNFTtbgG81JZyu68I&ehbc=2E312F"id="Map-size" alt="Google Map"></iframe>
+
+
+<!--Here-->
+<div class="Gallary">
+  <div class="images-s">
+    <div class="position-num">1 / 4</div>
+    <img src="bathroom-sink.png" id="gallary-img" alt="Bathroom Sink">
+  </div>
+
+  <div class="images-s">
+    <div class="position-num">2 / 4</div>
+    <img src="Clean-Bathroom-entranceview.png" id="gallary-img" alt="Clean Bathroom EntranceView">
+  </div>
+
+  <div class="images-s">
+    <div class="position-num">3 / 4</div>
+    <img src="Clean-carpet.png" id="gallary-img" alt="Clean Carpet">
+  </div>
+    
+  <div class="images-s">
+    <div class="position-num">4 / 4</div>
+    <img src="Clean-stove.png" id="gallary-img" alt="Clean Stove">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-box">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row-img">
+    <div class="column-img">
+      <img class="demo cursor" src="bathroom-sink.png" id="S-gallary-img" onclick="currentSlide(1)" alt="Dust Free Counter-Tops">
+    </div>
+    <div class="column-img">
+      <img class="demo cursor" src="Clean-Bathroom-entranceview.png" id="S-gallary-img"onclick="currentSlide(2)" alt="Clean Bathrooms">
+    </div>
+    <div class="column-img">
+      <img class="demo cursor" src="Clean-carpet.png" id="S-gallary-img"onclick="currentSlide(3)" alt="Professional Carpet Cleaning">
+    </div>
+    <div class="column-img">
+      <img class="demo cursor" src="Clean-stove.png" id="S-gallary-img" onclick="currentSlide(4)" alt="Sparkling Kitchen">
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+ <!--Instagram -->
+
+ 	<div class="Insta">
+	<div class="elfsight-app-a21529bb-db98-43b7-9288-4ae5ffddb1e3"></div>
+</div>
+
+
+
+<!-- Begining of Java -->
+
+<script type="text/javascript">
+	function sumValues()
+	{
+		var num1,num2, res;
+		num1=Number(document.formcalc.txtnum1.value);
+		num2=Number(150);
+		res=num1*num2;
+		fres= 'Estimate price:'+ '  '+'$'+res
+		document.formcalc.txtres.value=fres;
+	}
+</script>
+
+
+<script type="text/javascript">
+
+let subMenu= document.getElementById("subMenu");
+
+  function toggleMenu()
+  {
+    subMenu.classList.toggle("open-menu");
+    
+  }	
+
+
+let subMenu2= document.getElementById("subMenu2");
+
+  function toggleMenu2()
+  {
+    subMenu2.classList.toggle("open-menu");
+    
+  }	
+</script>
+
+
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<script src="https://kit.fontawesome.com/49003d43df.js" crossorigin="anonymous"></script>
+
+
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("images-s");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+
+
+
+
+</body>
+</html>

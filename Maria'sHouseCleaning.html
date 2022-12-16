@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+		<meta name= "description" content= "Maria's House Cleaning-Homepage">
+	<meta lang= "en">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Maria's House Cleaning</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" type="image/x-icon" href="searchicon.png">
+</head>
+
+
+<body>
+
+	<!--Image background: hold everything -->
+	<div class="container">
+		<div class="navbar">
+			<img src="logo.png" alt="logo-broom & bucket- with company name"class="logo">
+			<nav>
+				<ul>
+					<li><a href="Maria'sHouseCleaning.html">Home</a></li>
+					<li><a href="Services.html">Services</a></li>
+					<li><a href="Reviews.html">Reviews</a></li>
+					<li><a href="about.html">Contact Us</a></li>
+				</ul>
+			</nav>
+
+
+			<!--Email icon -->
+			<img src="email icon.png" alt="email icon" class="email" onclick="toggleMenu2()">
+
+			<div class="sub-menu-wrap2" id="subMenu2">
+				<div class="sub-menu2">
+					<div class="user-info2">
+						<h3>Contact Us</h3>
+						<hr>
+						
+						<a class="email" href="mailto:mariadamians.hc@gmail.com">mariadamians.hc@gmail.com</a>
+						
+					</div>
+				</div>
+			</div>
+
+
+
+			<!--Phone icon -->
+			<img src="phone icon.png" alt="phone icon"class="phone" onclick="toggleMenu()">
+
+			<div class="sub-menu-wrap" id="subMenu">
+				<div class="sub-menu">
+					<div class="user-info">
+						<h3>Contact Us</h3>
+						<hr>
+
+						<ul>
+						<li><a href="tel:2534786730">(253)-478-6730</a></li>
+						<li><a href="tel:2534576345">(253)-457-6345</a></li>
+						<li><a href="tel:2534865937">(253)-486-5937</a></li>
+						</ul>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!--Main writing -->
+		<div class="content">
+			<img src="houseicon.png" alt="Main View of Home- Business Card img" class="feature-img">
+			<h1>Maria's House<br>Cleaning</h1>
+			<p>Licenced business with 15 years of experience </p>
+			<p>For your every house cleaning need </p>
+			<a href="Services.html" class="btn">Learn More</a>
+
+			
+		</div>
+
+	
+
+
+
+	</div>
+
+<script>
+let subMenu= document.getElementById("subMenu");
+
+  function toggleMenu()
+  {
+    subMenu.classList.toggle("open-menu");
+    
+  }	
+
+
+let subMenu2= document.getElementById("subMenu2");
+
+  function toggleMenu2()
+  {
+    subMenu2.classList.toggle("open-menu");
+    
+  }	
+
+</script>	
+
+
+
+
+
+
+
+</body>
+</html>
