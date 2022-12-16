@@ -4,7 +4,7 @@
 	padding:  0;
 }
 
-/* idk broo also added the flex thing to img */ 
+
 
 
 .container
@@ -283,7 +283,7 @@ color:white;
 	align-items: center;
 }
 
-/*Phone wrap */
+
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) 
 {
 	.sub-menu-wrap
@@ -371,7 +371,7 @@ font-size: 15px;
 	transition: max-height 0.5s;
 }
 
-/*email icon */
+
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) 
 {
 	.sub-menu-wrap2
