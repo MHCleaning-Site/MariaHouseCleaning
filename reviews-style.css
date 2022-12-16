@@ -182,7 +182,6 @@ nav ul li a:hover
 	margin: 13px;
 }
 
-/*Phone */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) 
 {
 	.sub-menu-wrap
@@ -395,7 +394,7 @@ margin-bottom:.5rem;
 	
 }
 
-/*Whole box review+ img*/
+
 .review
 {
 	margin: 0 1 rem;
@@ -404,7 +403,7 @@ margin-bottom:.5rem;
 
 }
 
-/* images*/
+
 .head-review
 {
 	margin: 1.75rem auto;
@@ -412,7 +411,7 @@ margin-bottom:.5rem;
 	height:150px;
 }
 
-/* images cont-circle*/
+
 
 #profile
 {
@@ -424,7 +423,7 @@ margin-bottom:.5rem;
 
 }
 
-/*body of review */
+
 .body-review
 {
 	background-color: rgb(238, 238, 238);
