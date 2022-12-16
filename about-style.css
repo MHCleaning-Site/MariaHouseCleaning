@@ -23,7 +23,7 @@
 {
 .container
 {
-	height: 128vh;
+	height: 138vh;
 }
 
 }
@@ -402,20 +402,20 @@ padding-top: 5%;
 {
 .Inner_Box
 {
-	max-width: 95%;
-	height: 105vh;
-	top: 42%;
+	max-width: 96%;
+	height: 110vh;
+	top: 40%;
 	padding: 29px;
-	padding-top: 34px;
+	padding-top: 30px;
 }
 
 .contact-form
 {
 width:100%;
 text-align: center;
-padding-right:5%;
-padding-left:5%;
-padding-top: 5%;
+padding-right:3%;
+padding-left:3%;
+padding-top: 3%;
 
 }
 
