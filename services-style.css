@@ -6,7 +6,6 @@
 }
 
 
-/* Image background Top*/
 .container
 {
 	height: 100vh;
@@ -22,7 +21,7 @@
 }
 
 
-/* Nav bar*/
+
 .navbar
 {
 	width: 100%;
@@ -32,7 +31,7 @@
 	align-items: center;
 }
 
-/* Phone: gets rid of logo and min navbar*/
+
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) 
 {
 	.navbar
@@ -54,7 +53,7 @@
 }
 
 
-/*Targets the nav position/where it starts*/
+
 nav
 {
 	flex:  1;
@@ -69,7 +68,7 @@ nav ul li
 }
 
 
-/* Nav links under phone + email*/
+
 nav ul li a
 {
 	text-decoration:none ;
@@ -79,7 +78,7 @@ nav ul li a
 	text-transform:  capitalize;
 }
 
-/* Phone: pushed the nav all the way to the left & changed color*/
+
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) 
 {
 	nav
@@ -99,7 +98,7 @@ nav ul li a
 	}
 }
 
-/* The links under phone& email-change color when hovered over*/
+
 nav ul li a:hover
 {
 	color: #5DF117;
@@ -120,7 +119,7 @@ nav ul li a:hover
 
 
 
-/* Logo of the broom*/
+
 
 .logo
 {
@@ -131,14 +130,14 @@ nav ul li a:hover
 }
 
 
-/* Phone icon*/
+
 .phone
 {
 	width: 40px;
 	cursor: pointer;
 }
 
-/* Email*/
+
 .email
 {
 	width: 40px;
@@ -146,7 +145,7 @@ nav ul li a:hover
 	margin-right: 40px;
 }
 
-/* Phone: Made the icons smaller and closer*/
+
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) 
 {
 	.email
@@ -164,7 +163,6 @@ nav ul li a:hover
 }
 
 
-/* The Sub menu under email + phone*/
 .sub-menu-wrap
 {
 	position: absolute;
@@ -176,13 +174,13 @@ nav ul li a:hover
 	transition: max-height 0.5s;
 }
 
-/*How big the sub menu can get */
+
 .sub-menu-wrap.open-menu
 {
 	max-height: 400px;
 }
 
-/* How the menu looks*/
+
 .sub-menu
 {
 	background: white;
@@ -190,7 +188,7 @@ nav ul li a:hover
 	margin: 13px;
 }
 
-/* Sub menu text format*/
+
 .user-info
 {
 	
@@ -225,7 +223,7 @@ nav ul li a:hover
 
 }
 
-/* Sub menu links + actions*/
+
 .user-info a
 {
 font-size: 15px;
@@ -264,7 +262,7 @@ font-size: 15px;
 }
 
 
-/* Second Sub-menu*/
+
 
 .sub-menu-wrap2
 {
@@ -321,7 +319,7 @@ font-size: 15px;
 	margin: 5px 0 8 px;
 
 }
-/* Sub menu 2 links*/
+
 
 .user-info2 a
 {
@@ -356,7 +354,7 @@ font-size: 15px;
 }
 
 
-/* Added space between image and the begining */
+
 .space
 {
 	background: black;
@@ -364,9 +362,6 @@ font-size: 15px;
 }
 
 
-/* Begining of tabs*/
-
-/* Background*/
 
 .service
 {	
@@ -378,7 +373,7 @@ font-size: 15px;
 
 }
 
-/* Tab Header*/
+
 .title h2
 {
 	color:  white;
@@ -388,7 +383,7 @@ font-size: 15px;
 	text-align: center;
 }
 
-/*  3 tabs   */
+
 
 .box
 {
@@ -441,7 +436,7 @@ font-size: 15px;
 
 }
 
-/* Icons on the cards-img*/
+
 .card i
 {
 	font-size: 50px;
@@ -452,7 +447,7 @@ font-size: 15px;
 }
 
 
-/* Title on each card*/
+
 h5
 {
 	color: white;
@@ -460,7 +455,7 @@ h5
 	margin-bottom: 13px;
 }
 
-/* pharagraph under it*/
+
 .speel p
 {
 	color: #fcfc;
@@ -480,14 +475,14 @@ h5
 }
 
 
-/*The see through panel */
+
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/*Text in it */
+
 .row
 {
 	background:  rgba(245,245,245,.4);
@@ -497,8 +492,7 @@ h5
 
 }
 
-/* Columns of the top part-Table:Services+Estimate Cal
--Not the background square but inside */
+
 .column {
   float: left;
   width: 50%;
@@ -530,7 +524,7 @@ h5
 
 }
 
-/*Affects the warning on Estimate Calculater */
+
 #How
 {
 
@@ -553,7 +547,7 @@ form
 	border-radius: 30px;
 }
 
-/*Moves the actual form-calc */
+
 .row form
 {
 margin-left: 120px;
@@ -658,7 +652,7 @@ margin-top: 10px;
 }
 
 
-/* Locations and gallary section*/
+
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) 
 {
 	.Map
@@ -719,7 +713,7 @@ margin-top: 10px;
 
 
 
-/* Position the image container (needed to position the left and right arrows) */
+
 .Gallary{
 	float:right;
   position: relative;
@@ -728,12 +722,12 @@ margin-top: 10px;
   
 }
 
-/* Hide the images by default */
+
 .images-s{
   display: none;
 }
 
-/* Add a pointer when hovering over the thumbnail images */
+
 .cursor {
   cursor: pointer;
 }
@@ -753,7 +747,7 @@ margin-top: 10px;
 }
 
 
-/* Next & previous buttons */
+
 .prev,
 .next {
   cursor: pointer;
@@ -770,7 +764,7 @@ margin-top: 10px;
   -webkit-user-select: none;
 }
 
-/* Position the "next button" to the right */
+
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
@@ -785,8 +779,7 @@ margin-top: 10px;
 }
 
 	
-}
-/* On hover, add a black background color with a little bit see-through */
+
 .prev:hover
 {
   background-color: rgba(0, 0, 0, 0.8);
@@ -810,7 +803,7 @@ margin-top: 10px;
 
 }
 
-/* Number text (1/3 etc) */
+
 .position-num{
   color: #f2f2f2;
   font-size: 12px;
@@ -819,7 +812,7 @@ margin-top: 10px;
   top: 0;
 }
 
-/* Container for image text */
+
 .caption-box{
   text-align: center;
   background-color: #222;
@@ -833,14 +826,13 @@ margin-top: 10px;
   clear: both;
 }
 
-/* Six columns side by side-Size of thumbnail*/
+
 
 .column-img {
   float: left;
   width: 16.66%;
 }
 
-/* Add a transparency effect for thumnbail images */
 .demo {
   opacity: 0.6;
 }
@@ -850,7 +842,7 @@ margin-top: 10px;
   opacity: 1;
 }
 
-/* The Enlarged image at the top*/
+
 #gallary-img
 {
 	vertical-align: center;
@@ -858,7 +850,7 @@ margin-top: 10px;
 	height: 5%;
 }
 
-/* Thumbmail at bottom of gallary-Preview*/
+
 #S-gallary-img
 {
 	width:100%;
